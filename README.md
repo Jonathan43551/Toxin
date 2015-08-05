@@ -33,7 +33,7 @@ Mode 8 = Toxin/Outbreak with my version of dops
 Step 1:
 	Create a copy of the working OSM_NEO code, File > Save As...
 Step 2:
-	Replace the whole file with the following code.
+	Replace the whole file with the following code: from the first /* down to the bottom }// diov Loop
 Step 3:
 	Upload to each of your chips.
 Step 4:
@@ -43,6 +43,15 @@ Step 4:
     the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.” 
     -Hannah Harto: Practice reckless optimism (It’s the idea that it’s hip and cool to hope for the best
     and try your hardest, even though the odds might be against you.)
+
+
+
+
+
+
+
+
+
 
 
 ####	Toxin Code	####
