@@ -1,63 +1,50 @@
-# Toxin
-// Based on dope information from Jacoby D, implemented by Jonathan Foster(Helix)
- 
-// Inspiration:
+//Based on dope information from Jacoby D, implemented by Jonathan Foster(Helix)
 
-// Solid 1c dops of either BUBBLGUM or LAWNGR (index/ring LAWNGR, middle/pinky BUBBLGUM) that SHAKE into 2c strobie BUBBLGUM/LAWNGR
+//Inspiration:
+//Solid 1c dops of either BUBBLGUM or LAWNGR (index/ring LAWNGR, middle/pinky BUBBLGUM) that SHAKE into 2c strobie BUBBLGUM/LAWNGR
+//Solid LAWNGR/BUBBLGUM fade over 2 seconds
+//Anti's thumbs are basically what im going for(https://youtu.be/IT0zafAwxyI?t=3m15s)
+//He can entirely change the focus color of the show even though everything is completely equal is awesome
 
-// Solid LAWNGR/BUBBLGUM fade over 2 seconds
+//LAWNGR__// CC#: 7
+//BUBBLGUM// CC#: 19
+ 
+//Implementation:
+//I was able to get dops and strobie, those are public domain information and Ramiro was kind enough to let us know.
+//I couldn't find an easy to way to switch between those two colors, I'll work on it and release Toxin2 or something
+//The alternates have my version of dops, then we have toxin/outbreak using normal strobie/dops and my dops
+//Hope you like it, have an excellent day!
+ 
+//Mode 1 = LAWNGR index/ring Fingers 1c strobie with 2c dops 
+//Mode 2 = BUBBLGUM middle/pinky Fingers 1c strobie with 2c dops
+//Mode 3 = Thumbs
+// 
+//Mode 4 = LAWNGR index/ring Fingers with my version of dops
+//Mode 5 = BUBBLGUM middle/pinky Fingers with my version of dops
+//Mode 6 = Thumbs
+//
+//Mode 7 = Toxin/Outbreak with strobie/dops
+//Mode 8 = Toxin/Outbreak with my version of dops
 
-// Anti's thumbs are basically what im going for(https://youtu.be/IT0zafAwxyI?t=3m15s)
 
-// He can entirely change the focus color of the show even though everything is completely equal is awesome
+//Step 1:
+//Create a copy of the working OSM_NEO code, File > Save As...
 
-// LAWNGR__// CC#: 7
+//Step 2:
+//Replace the whole file with the following code: from the first /* down to the bottom }// diov Loop
 
-// BUBBLGUM// CC#: 19
- 
-// Implementation:
+//Step 3:
+//Upload to each of your chips.
 
-// I was able to get dops and strobie, those are public domain information and Ramiro was kind enough to let us know.
+//Step 4:
+//Remember the following things
 
-// I couldn't find an easy to way to switch between those two colors, I'll work on it and release Toxin2 or something
+//-Dune: “I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration.
+//    I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn
+//    the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.” 
 
-// The alternates have my version of dops, then we have toxin/outbreak using normal strobie/dops and my dops
-
-// Hope you like it, have an excellent day!
- 
- 
- 
-Mode 1 = LAWNGR index/ring Fingers 1c strobie with 2c dops 
-Mode 2 = BUBBLGUM middle/pinky Fingers 1c strobie with 2c dops
-Mode 3 = Thumbs
- 
-Mode 4 = LAWNGR index/ring Fingers with my version of dops
-Mode 5 = BUBBLGUM middle/pinky Fingers with my version of dops
-Mode 6 = Thumbs
- 
-Mode 7 = Toxin/Outbreak with strobie/dops
-Mode 8 = Toxin/Outbreak with my version of dops
- 
- 
- 
-Step 1:
-Create a copy of the working OSM_NEO code, File > Save As...
-
-Step 2:
-Replace the whole file with the following code: from the first /* down to the bottom }// diov Loop
-
-Step 3:
-Upload to each of your chips.
-
-Step 4:
-Remember the following things
-
--Dune: “I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration.
-    I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn
-    the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.” 
-
--Hannah Harto: Practice reckless optimism (It’s the idea that it’s hip and cool to hope for the best
-    and try your hardest, even though the odds might be against you.)
+//-Hannah Harto: Practice reckless optimism (It’s the idea that it’s hip and cool to hope for the best
+//    and try your hardest, even though the odds might be against you.)
  
  
  
@@ -69,7 +56,7 @@ Remember the following things
  
  
  
-####	Toxin Code	####
+//Toxin Code//
 
 /*
                                      ____   _____ __  __                     _
@@ -142,117 +129,9 @@ Modified code out of:
 
 Libraries:
 - <avr/sleep.h>  * Copyright (C) 2006 MacSimski 2006-12-30 / Copyright (C) 2007 D. Cuartielles 2007-07-08 - Mexico DF
-
-
-///////////////////////////////////////////////////////////////////////////////////
-/// WINDOWS CLEAN INSTALLATION ////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////
-CHECKLIST:
--Download Programmer's driver:
-http://tinyurl.com/ct8uv49
-
--Download NEO library (OSM_NEOv1-01.zip): 
-http://tinyurl.com/njlwnbw
-
-Download Arduino 1.6.1 installer: 
-http://tinyurl.com/o2jbl7d
-////////////////////////////////////////////
-
-1a) Install the programmer's driver
-
-1b) Install Arduino 1.6.1
-
-2) Open Arduino
-
-3) Install NEO:
-Sketch > Import Library... > Add Library ... (select OSM_NEOv1-01.zip)
-
-4) Open NEO:
-File > Examples > OSM_NEOv1>_NEOv1-01
-
-5) Set the port:
- Tools > Ports > COMx (select the port of your programmer)
-
-6) Tools > Boards > (Select "Arduino Uno")
-
-7) Sketch > Verify / Compile
-
-8) File > Upload 
-If sucess, you will have a message:
-Reading | ########(...)################ | 100% 3.22s
-avrdude: verifying ...
-avrdude: XXXXX bytes of flash verified
-avrdude done.  Thank you.
-
-To keep uploading to the rest of the lights:
-9) File > Upload 
-
-Instructions:
-http://www.osm.codes/neo/OSM_instructions_v1.pdf
-
-If you run with any issue, please describe the just opening a ticket at:
-http://support.osm.codes
-
-///////////////////////////////////////////////////////////////////////////////////
-/// MAC OSX CLEAN INSTALLATION ////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////
-CHECKLIST:
-
--Download and install the programmer's drivers:
-http://tinyurl.com/dc3jzz
-
--Download Arduino 1.6.1 for Mac
-http://tinyurl.com/ntz8ew5
-
--Download NEO library (OSM_NEOv1-01.zip): 
-http://tinyurl.com/njlwnbw
-//////////////////////////////////////////////
-
-1) Install on this order( Drivers, Arduino 1.6.1 for Mac)
-
-2) Open Arduino and go to:
-Sketch > Import Library > Add Library...
-(select OSM_NEOv1-01.zip)
-
-3) Open:
-File > Examples > OSM_NEOv1>_NEOv1-01
-
-4) Select the correct port:
-Tools > Port > /dev/tty.SLAB_USBtoUART
-
-5) Select the correct board: 
-Tools > Board > Arduino Uno
-
-6) Connect the chip, and Compile:
-Sketch > Verify / Compile
-
-7) Program the chip:
-File > Upload
-
-Done
-
-Repeat from 7) to reprogram the rest of the lights.
-
-Instructions:
-http://www.osm.codes/neo/OSM_instructions_v1.pdf
-
-If you run with any issue, please describe the just opening a ticket at:
-http://support.osm.codes
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
 */
 
-
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-/// THE PROGRAM STARTS HERE ///////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
+//THE PROGRAM STARTS HERE //
 
 
 #define VISUAL // COMMENT TO DISABLE VISUAL NAVIAGTION
@@ -272,7 +151,7 @@ http://support.osm.codes
 
 #define NOP __asm__ __volatile__ ("nop\n\t") // AND THIS IS HOW YOU DEFINE A "NOP" ON ARDUINO AVR
 
-//// SETTING VARIABLES
+//SETTING VARIABLES
 
 volatile boolean MODERESET_FLAG = 0;             // RESET FLAG
 volatile boolean AllYourBaseAreBelongToUs = 0;   
