@@ -1,18 +1,22 @@
 Based on dope information from Jacoby D, implemented by Jonathan Foster(Helix)
-
+----
 Updated to use 1-1-4, put the modes into bundles
-
+----
 4 modes   1, 5, 7, 8, // Bundle 1 PINKY
+#
 4 modes   2, 4, 7, 8, // Bundle 2 IndexFinger
+#
 4 modes   3, 6, 7, 8, // Bundle 3 THUMBS
-
+#
 4 modes   9, 10, 11, 12, // Bundle 4 Sandbox
-12 modes   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 5 All Modes and sets
+#
+1#2 modes   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 5 All Modes and sets
 	
 
-
+----
 
 Inspiration:
+----
 Solid 1c dops of either BUBBLGUM or LAWNGR (index/ring LAWNGR, middle/pinky BUBBLGUM) that SHAKE into 2c strobie BUBBLGUM/LAWNGR
 Solid LAWNGR/BUBBLGUM fade over 2 seconds
 Anti's thumbs are basically what im going for(https://youtu.be/IT0zafAwxyI?t=3m15s)
@@ -22,11 +26,13 @@ LAWNGR__ CC#: 7
 BUBBLGUM CC#: 19
 
 Implementation:
+----
 I was able to get dops and strobie, those are public domain information and Ramiro was kind enough to let us know.
 I couldn't find an easy to way to switch between those two colors, I'll work on it and release Toxin2 or something
 The alternates have my version of dops, then we have toxin/outbreak using normal strobie/dops and my dops
 Hope you like it, have an excellent day!
 
+----
 Mode 1 = LAWNGR index/ring Fingers 1c strobie with 2c dops 
 Mode 2 = BUBBLGUM middle/pinky Fingers 1c strobie with 2c dops
 Mode 3 = Thumbs
@@ -38,7 +44,7 @@ Mode 6 = Thumbs
 Mode 7 = Toxin/Outbreak with strobie/dops
 Mode 8 = Toxin/Outbreak with my version of dops
 
-
+----
 Step 1:
 Create a copy of the working OSM_NEO code, File > Save As...
 
