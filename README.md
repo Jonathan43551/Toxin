@@ -18,7 +18,7 @@ Updated to use 1-1-4b and put the modes into bundles
 Inspiration:
 ----
 Solid 1c dops of either BUBBLGUM or LAWNGR (index/ring LAWNGR, middle/pinky BUBBLGUM) that SHAKE into 2c strobie BUBBLGUM/LAWNGR
-Solid LAWNGR/BUBBLGUM fade over 2 seconds
+Solid LAWNGR/BUBBLGUM fade over 1.5 seconds
 Anti's thumbs are basically what im going for(https://youtu.be/IT0zafAwxyI?t=3m15s)
 He can entirely change the focus color of the show even though everything is completely equal is awesome
 
