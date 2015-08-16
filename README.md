@@ -10,7 +10,7 @@ Updated to use 1-1-4, put the modes into bundles
 #
 4 modes   9, 10, 11, 12, // Bundle 4 Sandbox
 #
-1#2 modes   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 5 All Modes and sets
+12 modes   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 5 All Modes and sets
 	
 
 ----
