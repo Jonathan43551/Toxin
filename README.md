@@ -1,6 +1,6 @@
 Based on dope information from Jacoby D, implemented by Jonathan Foster(Helix)
 ----
-Updated to use 1-1-4, put the modes into bundles
+Updated to use 1-1-4b and put the modes into bundles
 ----
 4 modes   1, 5, 7, 8, // Bundle 1 PINKY
 #
