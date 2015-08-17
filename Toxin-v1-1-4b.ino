@@ -449,16 +449,16 @@ const PROGMEM  uint8_t ModeSetFLASH [13][36]= // FACTORY DEFAULT
 volatile byte UserCmodes[5][14] = // USE: UserCmodes[CurrentUserBundle][CurrentUserMode];
 {// byte UserCmodes
 	
+	12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 1 All Modes and sets
 	
-	4,   1, 5, 7, 8, // Bundle 1 PINKY
+	4,   1, 5, 7, 8, // Bundle 2 PINKY
 	
-	4,   2, 4, 7, 8, // Bundle 2 IndexFinger
+	4,   2, 4, 7, 8, // Bundle 3 IndexFinger
 
-  	4,   3, 6, 7, 8, // Bundle 3 THUMBS
+  	4,   3, 6, 7, 8, // Bundle 4 THUMBS
 
-	4,   9, 10, 11, 12, // Bundle 4 Sandbox
+	4,   9, 10, 11, 12 // Bundle 5 Sandbox
 	
-	12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 5 All Modes and sets
 	
 }; // etyb UserCmodes
 ////////////////////////////////////////////////////////////////////////////////////////////////
