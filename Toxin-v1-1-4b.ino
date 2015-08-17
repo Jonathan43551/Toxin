@@ -382,7 +382,7 @@ volatile byte BPM_Selector;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION ///
-volatile  byte CurrentVersion = 140;         // CHANGE THIS NUMBER IF YOU WANT TO SAVE A NEW FACTORY DEFAULT  BETWEEN 1 AND 254  <----
+volatile  byte CurrentVersion = 141;         // CHANGE THIS NUMBER IF YOU WANT TO SAVE A NEW FACTORY DEFAULT  BETWEEN 1 AND 254  <----
 //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION ///
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -449,7 +449,7 @@ const PROGMEM  uint8_t ModeSetFLASH [13][36]= // FACTORY DEFAULT
 volatile byte UserCmodes[5][14] = // USE: UserCmodes[CurrentUserBundle][CurrentUserMode];
 {// byte UserCmodes
 	
-	12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 1 All Modes and sets
+	12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0, // Bundle 1 All Modes and sets
 	
 	4,   1, 5, 7, 8, // Bundle 2 PINKY
 	
