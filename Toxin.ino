@@ -66,13 +66,13 @@ __      ____      ____      __     | |  | | (___ | \  / |       ___ ___   __| | 
 THIS CODE IS DISTRIBUTED UNDER CREATIVE COMMONS SHARE ALIKE 4.0
 Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 You are free to:
-Share ï¿½ copy and redistribute the material in any medium or format
-Adapt ï¿½ remix, transform, and build upon the material
+Share Ã¯Â¿Â½ copy and redistribute the material in any medium or format
+Adapt Ã¯Â¿Â½ remix, transform, and build upon the material
 for any purpose, even commercially.
 The licensor cannot revoke these freedoms as long as you follow the license terms.
 Under the following terms:
-Attribution ï¿½ You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-ShareAlike ï¿½ If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+Attribution Ã¯Â¿Â½ You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+ShareAlike Ã¯Â¿Â½ If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 http://creativecommons.org/licenses/by-sa/4.0/legalcode
 Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 
@@ -382,7 +382,7 @@ volatile byte BPM_Selector;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION ///
-volatile  byte CurrentVersion = 141;         // CHANGE THIS NUMBER IF YOU WANT TO SAVE A NEW FACTORY DEFAULT  BETWEEN 1 AND 254  <----
+volatile  byte CurrentVersion = 148;         // CHANGE THIS NUMBER IF YOU WANT TO SAVE A NEW FACTORY DEFAULT  BETWEEN 1 AND 254  <----
 //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION  //// CURRENT VERSION ///
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -446,19 +446,19 @@ const PROGMEM  uint8_t ModeSetFLASH [13][36]= // FACTORY DEFAULT
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //// BUNLDES //// BUNLDES //// BUNLDES //// BUNLDES //// BUNLDES //// BUNLDES //// BUNLDES /////
 ////////////////////////////////////////////////////////////////////////////////////////////////
-volatile byte UserCmodes[5][14] = // USE: UserCmodes[CurrentUserBundle][CurrentUserMode];
+volatile byte UserCmodes[5][13] = // USE: UserCmodes[CurrentUserBundle][CurrentUserMode];
 {// byte UserCmodes
 	
-	12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0, // Bundle 1 All Modes and sets
 	
-	4,   1, 5, 7, 8, // Bundle 2 PINKY
-	
-	4,   2, 4, 7, 8, // Bundle 3 IndexFinger
+   4,    1, 5, 7, 8, 0, 0, 0, 0, 0, 0, 0, 0,      // Bundle 1 PINKY
 
-  	4,   3, 6, 7, 8, // Bundle 4 THUMBS
+   4,    2, 4, 7, 8, 0, 0, 0, 0, 0, 0, 0, 0,      // Bundle 2 INDEX FINGER
 
-	4,   9, 10, 11, 12 // Bundle 5 Sandbox
-	
+   4,    3, 6, 7, 8, 0, 0, 0, 0, 0, 0, 0, 0,      // Bundle 3 THUMBS
+        
+   12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,   // Bundle 4
+        
+   12,   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,   // Bundle 5
 	
 }; // etyb UserCmodes
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -654,7 +654,6 @@ while (Mode == 0 )
 	//                 				(//-ACCEL SETTINGS-//----PRIME A SETTINGS----//----PRIME B SETTINGS----//)
 	osm_MASTER_BUILDER	(	2,		0,		500,			1,  6,  10,		0,	0,	0,			1,  6,  3,	0,	0,	0	         ) ; } ;
 //////    MODE		//////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
 //////    MODE     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
