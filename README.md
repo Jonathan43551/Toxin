@@ -1,14 +1,14 @@
 Based on dope information from Jacoby D, implemented by Jonathan Foster(Helix)
 ----
-Updated to use 1-1-4b and put the modes into bundles
+Updated to use 1-1-4 and put the modes into bundles
 ----
-4 modes   1, 5, 7, 8, // Bundle 1 PINKY
+4 modes   1, 5, 7, 8, // Bundle 1 PINKY (WHITE)
 #
-4 modes   2, 4, 7, 8, // Bundle 2 IndexFinger
+4 modes   2, 4, 7, 8, // Bundle 2 IndexFinger (RED)
 #
-4 modes   3, 6, 7, 8, // Bundle 3 THUMBS
+4 modes   3, 6, 7, 8, // Bundle 3 THUMBS (GREEN)
 #
-4 modes   9, 10, 11, 12, // Bundle 4 Sandbox
+12 modes   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 4 All Modes and sets
 #
 12 modes   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0 // Bundle 5 All Modes and sets
 	
@@ -46,10 +46,10 @@ Mode 8 = Toxin/Outbreak with my version of dops
 
 ----
 Step 1:
-Create a copy of the working OSM_NEO code, File > Save As...
+Create a copy of the working OSM_NEO code, File > Save As... 'Toxin' (this will create a new sketch folder).
 
 Step 2:
-Replace the whole file with the following code: from the first /* down to the bottom }// diov Loop
+Replace the Toxin.ino file with the github version.
 
 Step 3:
 Upload to each of your chips.
